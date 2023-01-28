@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "users")
+@Table(name = "user_table")
 @Getter
 @Setter
 @Builder
@@ -18,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Integer id;
     private String firstname;
     private String lastname;
